@@ -9,25 +9,94 @@
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script> 
 </head>
 <body>
-    <h1>Week 1 - lab 1  </h1>
+    <h1>Week 1 - lab 1</h1>
     
 
     <h2>Moment.js</h2>
     <script>
         let date1 = moment("08/05/2024")
-        document.write("date 1 : " + date1)
+        document.write("date 1 : " + date1 + "<br>" )
 
         let date2 = date1.format("DD/MM/YYYY")
         document.write("date 2 : " + date2 + "<br>")
 
         let date3 = moment("08/05/2024").format("DD/MM/YYYY")
-        document.write("date 3 : " + date3) + "<dr>"
+        document.write("date 3 : " + date3 + "<br>")
+
+        let date4 = moment("08/05/2024",  "DD/MM/YYYY").format("DD/MMM/YYYY")
+        document.write("date 4 : " + date4 + "<br>")
+        
+
+        let date5 = moment("08/05/2024", "DD/MM/YYYY")
+                    .add(1, "week")
+                    .format("MMM/DD/YYYY")
+        document.write(`date 5 ( 1 week added to date 4) ${date5} <br>`)
+
+        //Moment of my choice
+        
+        
+        let mydate1 = moment("4/28/2024", "DD/MM/YYYY")
+                        .add(3, "days")
+                        .format("MMM/DD/YYYY")
+        document.write(`my date 1 (3 days added ) ${mydate1} <br>`)
+
+        //Practice at home
+        let mydate6 = moment("08/05/2024").format("DD/MMM/YYY") 
+        document.write(`my home practice  ${mydate6} <br>`)
+
+        let practice7 = moment("04/04/2024", "DD/MM/YYYY")
+                        .add(3, "days")
+                        .format("DD/MMM/YYYY")
+        document.write(`my second practice : ${practice7} <br>`)
+
+
+        let date8 = moment("08/11/2024", "DD/MM/YYYY")
+                    .add(1,"week")
+                    .format("DD/MMM/YYYY")
+        document.write(`my date 8 : ${date8} <br>`)
+
+
+
+        let date9 = moment("05/04/2024","DD/MM/YYYY")
+                    .add(2,"week")
+                    .format("DD/MMM/YYYY")
+        document.write(`my new date is : ${date9} <br>` )
+
+
 
 
     </script>
 
 
     <h2>lodash.js</h2>
+
+    <script>
+        let words = ["pineapple","monday","apple","wood-apple","headphones","ontario","purple","kebob","ipad"]
+
+        let firstElement = _.first(words)
+        document.write(`first element of array : ${firstElement} <br>`)
+
+        let lastElement = _.last(words)
+        document.write(`last element of array : ${lastElement} <br>`)
+
+
+
+        let extrctedElement = _.slice(words, 3 , 6)
+        document.write(`typeof(extracted elements) : ${typeof(extrctedElement)} <br>`)
+        document.write(`extracted slice elements : ${extrctedElement} <br>`)
+
+        // using drop function
+
+        let dropElement = _.drop(words, 5)
+        document.write(`extracted elements : ${dropElement} <br>`)
+
+        let practice = _.first(words)
+        document.write(`experiment for lodash : ${practice} <br>`)
+
+        let homeprac = _.slice(words, 3, 6)
+        document.write(`home xepri : ${homeprac} <br>`)
+
+    </script>
     
 </body>
     <title>Joseph_waldron_lab1</title>
