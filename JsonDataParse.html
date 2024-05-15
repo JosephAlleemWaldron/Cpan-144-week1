@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON PARSING EXAMPLE</h1>
+
+    <script>
+let jsonData = [
+{
+    "courseCode" : "CPAN144",
+    "COURSEtITLE" : "Adv. Front-end Programming",
+    "credit" : 3,
+    "mandatory" : true,
+    "prerequisite" : [
+
+        {"courseCode" : "CPAN123"},
+        {"courseCode" : "CPAN222"}
+    ],
+    "corequisite" : null
+},
+{
+    "courseCode" : "CPAN143",
+    "COURSEtITLE" : "Cross-Platform App Dev",
+    "credit" : 3,
+    "mandatory" : true,
+    "prerequisite" : [
+
+        {"courseCode" : "CPAN116"},
+        {"courseCode" : "CPAN251"}
+    ],
+    "corequisite" : null
+
+}
+
+]
+
+let code1 = jsonData[0].courseCode
+document.write(`course code : ${code1} <br>`)
+// document.write(`title : ${jsonData[0].COURSEtITLE} <br>`)
+
+document.write(`All courses <br><br>`)
+for(let i = 0; i < jsonData.length; i++){
+ document.write(`course code: ${jsonData[i].courseCode}<br>`)
+ document.write(`course title: ${jsonData[i].COURSEtITLE}<br>`)
+ document.write(`course credit: ${jsonData[i].credit}<br>`)
+ document.write(`course mandatory: ${jsonData[i].mandatory}<br>`)
+ document.write(`prerequisite :`)
+ for(let j = 0; j < jsonData[i].prerequisite.length; j++){
+    document.write(`${jsonData[i].prerequisite[j].courseCode} ,`)
+    } 
+document.write('<br>')
+}
+
+
+
+
+    </script>
+</body>
+</html>

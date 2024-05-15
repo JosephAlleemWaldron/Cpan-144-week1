@@ -1,0 +1,22 @@
+[
+    {
+        "PlateNum" : "ABX123",
+        "Make" : "Toyota",
+        "Model" : "Corolla",
+        "price" : "23000"
+    },
+
+    {
+        "PlateNum" : "NMP432",
+        "Make" : "Mazda",
+        "Model" : "lll",
+        "price" : "32000"
+    },
+    {
+        "PlateNum" : "PUT988",
+        "Make" : "Honda",
+        "Model" : "Civic",
+        "price" : "19500"
+    }
+
+]

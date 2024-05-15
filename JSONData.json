@@ -1,0 +1,28 @@
+[
+{
+    "courseCode" : "CPAN144",
+    "COURSEtITLE" : "Adv. Front-end Programming",
+    "credit" : 3,
+    "mandatory" : true,
+    "prerequisite" : [
+
+        {"courseCode" : "CPAN123"},
+        {"courseCode" : "CPAN222"}
+    ],
+    "corequisite" : null
+},
+{
+    "courseCode" : "CPAN143",
+    "COURSEtITLE" : "Cross-Platform App Dev",
+    "credit" : 3,
+    "mandatory" : true,
+    "prerequisite" : [
+
+        {"courseCode" : "CPAN116"},
+        {"courseCode" : "CPAN251"}
+    ],
+    "corequisite" : null
+
+}
+
+]
