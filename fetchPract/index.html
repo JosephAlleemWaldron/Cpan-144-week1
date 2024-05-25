@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/fetchPract/main.js"></script>
+</head>
+<body>
+    <h2>Enter the crypto ticker</h2>
+    <label for="">Crypto ticker</label><br>
+    <select id="scrcrypto">
+        
+        <option value="btcinr">btcinr</option>
+        <option value="xrpinr">xrpinr</option>
+        <option value="ethinr">ethinr</option>
+        
+    </select>
+    <p>Name: <span id="cryptoname"></span></p>
+    <p>Crypto symbol: <span id="cryptsymbol"></span></p>
+    <p>Asking price: $<span id="cryptoprice"></span></p>
+    <p>Opening Price: $<span id="cryptoOP"></span></p>
+    <p>Closing Price: $<span id="cryptolowprice"></span></p>
+    <p>Highest Price: $<span id="crypthighprice"></span></p>
+    <button id="results" onclick="GetCryptoInfo()">Results</button>
+    
+</body>
+</html>
